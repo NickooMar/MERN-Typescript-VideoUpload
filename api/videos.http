@@ -1,0 +1,44 @@
+
+@api = http://localhost:3000
+
+
+
+
+### Get all videos
+GET {{api}}/videos
+
+
+
+
+### Get just one Video
+GET {{api}}/videos/5f8f6b3d246d91289c9715f6
+
+
+
+###Create a Video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=qf8-JzU-4IE",
+    "title": "Fazt video MEAN",
+    "description": "This is a fazt video MEAN"
+}
+
+
+
+
+### Delete one video
+DELETE {{api}}/videos/5f8f6b0e246d91289c9715f5
+
+
+
+
+### Update one video
+PUT {{api}}/videos/5f8f6b3d246d91289c9715f6
+Content-Type: application/json
+
+{
+    "title": "MEAN!",
+    "description": "Mean video"
+}
